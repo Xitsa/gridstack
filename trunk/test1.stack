@@ -1,0 +1,11 @@
+Monitor 1
+ HStack
+   (
+        Window 500!
+        VStack 100!
+           (
+                Window
+                Window
+                Window
+           )
+   )
