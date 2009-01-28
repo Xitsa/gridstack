@@ -1,0 +1,22 @@
+Monitor 1
+ Window
+Monitor 2
+ HStack
+   (
+     Window 2
+     VStack
+       (
+         Window
+         Window
+       )
+   )
+Monitor 3
+ HStack
+   (
+     Window 2
+     VStack
+       (
+         Window
+         Window
+       )
+   )
