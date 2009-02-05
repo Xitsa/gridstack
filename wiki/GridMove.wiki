@@ -1,0 +1,25 @@
+#summary GridMove description and links
+= Overview =
+
+[http://jgpaiva.donationcoders.com/gridmove.html GridMove] is a program that aims at making windows management easier. It helps you with this task by defining a visual grid on your desktop, to which you can easily snap windows. This program comes bundled with some predefined grid templates, that can be easily swaped, but also has ways of creating custom grids or sharing grids made by others.
+
+GridMove makes moving windows, resizing windows, displaying them on cascade or on mosaic, making them on top or anything you can think of as easy as drag and drop.
+
+This tool was made taking in mind those who own big screens and keep organizing their windows. This program is specially useful for anyone that keeps more than 1 window on the screen at one time, because it helps the user to maximize the usable space of the monitor, by resizing the windows in a much easier way than moving and resizing them one by one.
+
+Thanks to its simple interaction methods, GridMove becomes intuitive and fast, helping you to improve your workflow.
+
+= Features =
+
+    * 3 different interaction methods to suit everyone's likes
+    * Several pre-made grid templates that can be easily swaped
+    * Ability to set windows on top and maximize them vertically or horizontally
+    * Full keyboard support, which can organize windows with one hotkey press
+    * *MultiMonitor Support*
+    * Customizable hotkeys
+    * Customizable interface
+    * Possibility to create dynamic custom grids
+    * Complete help file
+
+= Downloads =
+One can download it from its [http://jgpaiva.donationcoders.com/gridmove.html homepage].
