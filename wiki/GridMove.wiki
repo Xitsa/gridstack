@@ -15,7 +15,7 @@ Thanks to its simple interaction methods, GridMove becomes intuitive and fast, h
     * Several pre-made grid templates that can be easily swaped
     * Ability to set windows on top and maximize them vertically or horizontally
     * Full keyboard support, which can organize windows with one hotkey press
-    * *MultiMonitor Support*
+    * *`MultiMonitor` Support*
     * Customizable hotkeys
     * Customizable interface
     * Possibility to create dynamic custom grids
