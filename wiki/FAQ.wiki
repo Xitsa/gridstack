@@ -59,7 +59,7 @@ Monitor 1
             Window 1 #Part B
         )
 }}}
-We are almost done, and have only part B, that needed to be split on three vertical parts H, I and J.
+We are almost done, and have only part B needed to be split on three vertical parts H, I and J.
 {{{
 Monitor 1
     HStack
