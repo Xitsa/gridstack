@@ -1,0 +1,110 @@
+#summary How to use GridStack
+
+= How to use GridStack =
+First, you should write a special text file, describing window layout.
+Usually I save it with an extension *stack*. Suppose, that it has name *my.stack*.
+To get a corresponding grid call _gridstack_ in such manner:
+`GridStack my.stack my.grid`
+= How to define desired layout =
+I try to show it by example.
+
+Look at the picture. On left top corner is a desired layout.
+
+Defining layout is iterative process of dissecting windows on vertical or horizontal parts.
+
+Lets start with empty window. Thats easy, monitor one has one window, that fills all.
+{{{
+Monitor 1
+    Window
+}}}
+Now split Window on two horizontal parts A and B. Let width of A be 3 times width of B (and the same height).
+So let substitute window by a HStack construction:
+{{{
+Monitor 1
+    HStack
+        (
+            Window 3 #Part A
+            Window 1 #Part B
+        )
+}}}
+Now split Part A on two vertical parts C and D. And let height of C be 2 times of D (and the same width).
+{{{
+Monitor 1
+    HStack
+        (
+            VStack 3 #Part A
+                (
+                    Window 2 #Part C
+                    Window 1 #Part D
+                )
+            Window 1 #Part B
+        )
+}}}
+Part C doesn't need any divisions, so let proceed with a part D, that needed to be split on three horizontal parts.
+Lets make them the same. Please note, that if relative size is equal one, it can be omitted.
+{{{
+Monitor 1
+    HStack
+        (
+            VStack 3 #Part A
+                (
+                    Window 2 #Part C
+                    HStack 1 #Part D
+                        (
+                            Window #Part E
+                            Window #Part F
+                            Window #Part G
+                        )
+                )
+            Window 1 #Part B
+        )
+}}}
+We are almost done, and have only part B, that needed to be split on three vertical parts H, I and J.
+{{{
+Monitor 1
+    HStack
+        (
+            VStack 3 #Part A
+                (
+                    Window 2 #Part C
+                    HStack 1 #Part D
+                        (
+                            Window #Part E
+                            Window #Part F
+                            Window #Part G
+                        )
+                )
+            VStack 1 #Part B
+                (
+                    Window #Part H
+                    Window #Part I
+                    Window #Part J
+                )
+        )
+}}}
+== What if I want exact size? ==
+If, for example you want parts E, F and G have height 200 pixels use absolute notation: *`<number>!`* (with an exclamation mark).
+
+Between number and '!' must not be any spaces!
+{{{
+Monitor 1
+    HStack
+        (
+            VStack 3 #Part A
+                (
+                    Window 2 #Part C
+                    HStack 200! #Part D has 200 pixels height
+                        (
+                            Window #Part E
+                            Window #Part F
+                            Window #Part G
+                        )
+                )
+            VStack 1 #Part B
+                (
+                    Window #Part H
+                    Window #Part I
+                    Window #Part J
+                )
+        )
+}}}
