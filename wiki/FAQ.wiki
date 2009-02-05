@@ -8,6 +8,8 @@ To get a corresponding grid call _gridstack_ in such manner:
 = How to define desired layout =
 I try to show it by example.
 
+[http://code.google.com/p/gridstack/source/browse/trunk/window_en.png]
+
 Look at the picture. On left top corner is a desired layout.
 
 Defining layout is iterative process of dissecting windows on vertical or horizontal parts.
